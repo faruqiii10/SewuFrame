@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-sewu-yellow: #FFD700;
+  --color-sewu-green: #008D4C;
+  --color-sewu-green-hover: #00703c;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-900 antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.btn-sewu {
+  @apply bg-[--color-sewu-green] text-white hover:bg-[--color-sewu-green-hover] transition-colors;
+}
+
+.sidebar-sewu {
+  @apply bg-[--color-sewu-yellow] border-r border-black/5;
+}
